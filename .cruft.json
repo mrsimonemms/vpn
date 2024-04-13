@@ -1,0 +1,17 @@
+{
+  "template": "https://github.com/mrsimonemms/new",
+  "commit": "8afffcf47ddd815fe80625dd013154e2b52174ca",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "vpn",
+      "description": "My VPN setup",
+      "author": "Simon Emms <simon@simonemms.com>",
+      "_template": "https://github.com/mrsimonemms/new"
+    }
+  },
+  "directory": "blank",
+  "skip": [
+    ".git"
+  ]
+}
