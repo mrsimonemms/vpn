@@ -5,7 +5,14 @@
     "ghcr.io/devcontainers/features/terraform:1": {
       "installTerraformDocs": true,
       "installTFsec": true
+    },
+    "ghcr.io/devcontainers-contrib/features/gh-release:1": {
+      "repo": "civo/cli",
+      "binaryNames": "civo"
     }
+  },
+  "postCreateCommand": {
+    "civo-completion": "civo completion bash | sudo tee -a /etc/bash_completion.d/civo > /dev/null"
   },
   "customizations": {
     "vscode": {
