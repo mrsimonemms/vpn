@@ -1,4 +1,16 @@
 {
+  "name": "devcontainer",
+  "image": "ghcr.io/mrsimonemms/devcontainers/full",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "installTerraformDocs": true,
+      "installTFsec": true
+    },
+    "ghcr.io/devcontainers-contrib/features/digitalocean-cli:1": {}
+  },
+  "postCreateCommand": {
+    "doctl-completion": "doctl completion bash | sudo tee -a /etc/bash_completion.d/doctl > /dev/null"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -6,8 +18,5 @@
       ],
       "settings": {}
     }
-  },
-  "features": {},
-  "image": "ghcr.io/mrsimonemms/devcontainers/full",
-  "name": "devcontainer"
+  }
 }
