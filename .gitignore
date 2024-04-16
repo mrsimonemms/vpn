@@ -9,3 +9,6 @@ Thumbs.db
 .commit
 .devbox
 .envrc
+
+.terraform
+terraform.tfstate*

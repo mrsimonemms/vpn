@@ -36,3 +36,14 @@ repos:
     rev: v0.2.2
     hooks:
       - id: scan
+  - repo: https://github.com/terraform-docs/terraform-docs
+    rev: v0.17.0
+    hooks:
+      - id: terraform-docs-go
+        args:
+          - markdown
+          - table
+          - --output-file
+          - README.md
+          # @todo(sje): add infra path
+          - ./infrastructure/path
