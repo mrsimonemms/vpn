@@ -45,5 +45,9 @@ repos:
           - table
           - --output-file
           - README.md
-          # @todo(sje): add infra path
-          - ./infrastructure/path
+          - ./infrastructure/civo
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.89.0
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
